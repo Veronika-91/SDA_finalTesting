@@ -1,5 +1,7 @@
 package org.example;
 
+import org.junit.After;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
@@ -18,6 +20,12 @@ public class SdaTest {
 
     }
 
+    @After
+    public void doAfterTestEnding(){
+        driver.close();
+        driver.quit();
+    }
+
     @Test
     public void sdaTest(){
         // najprv si nacitame stranku tutorialspoint
@@ -29,6 +37,8 @@ public class SdaTest {
         driver.findElement(By.id("name")).sendKeys("Veronika");
         // toto mi najde na stranke prvok a vpise mail
         driver.findElement(By.id("email")).sendKeys("nikus.kovalcikova@email.com");
+        // assertujeme prvý parameter je predpoklad a druhý je skutočná hodnota - overí, zde je správny text
+        Assert.assertEquals("Student Registration Form", driver.findElement(By.xpath("//*[@id=\"practiceForm\"]/h1")).getText());
 
 
 
