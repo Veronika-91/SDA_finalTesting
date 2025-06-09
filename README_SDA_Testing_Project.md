@@ -75,7 +75,7 @@ The testing was divided into **two main parts**:
 **Form Test Result**
 Below is a screenshot from IntelliJ IDEA showing a successful execution of a Form acception of the inputs:
 
-![Form Test Result]
+![Form Test Result] Form_Testing_Results.png 
 
 **BDD Test Result**
 Below is a screenshot from IntelliJ IDEA showing a successful execution of a BDD scenario using Gherkin syntax and Cucumber framework:
