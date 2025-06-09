@@ -80,4 +80,4 @@ Below is a screenshot from IntelliJ IDEA showing a successful execution of a For
 **BDD Test Result**
 Below is a screenshot from IntelliJ IDEA showing a successful execution of a BDD scenario using Gherkin syntax and Cucumber framework:
 
-![BDD Test Result] 
+![BDD Test Result] BDD_Gherkin_testResults.png 
