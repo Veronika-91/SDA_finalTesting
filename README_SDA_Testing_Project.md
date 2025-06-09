@@ -69,3 +69,9 @@ The testing was divided into **two main parts**:
 
 - Tests run in Chrome – ensure the `chromedriver` version matches your Chrome browser.
 - The form test and the checkbox test are handled separately, one with plain Selenium, the other using BDD via Cucumber.
+
+### ✅ Sample BDD Test Result
+
+Below is a screenshot from IntelliJ IDEA showing a successful execution of a BDD scenario using Gherkin syntax and Cucumber framework:
+
+![BDD Test Result]
