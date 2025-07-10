@@ -1,5 +1,6 @@
 package org.example;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
@@ -15,15 +16,17 @@ public class SdaTest {
 
     @Before
     public void setUp(){
-        System.setProperty("webdriver.chrome.driver", "/Users/test/Desktop/software tester documenty/SDA_finalTesting/src/main/resources/chromedriver");
+        WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
+
 
     }
 
     @After
-    public void doAfterTestEnding(){
-        driver.close();
-        driver.quit();
+    public void doAfterTestEnding() {
+        if (driver != null) {
+            driver.quit();
+        }
     }
 
     @Test
